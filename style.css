@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "gilroy"; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+  padding: 0px 50px;
+  padding-top: 100px;
+  gap: 65px;
+}
+#left {
+  height: 100%;
+  width: 45%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+#left h1 {
+  /* font-size: 120px; */
+  font-size: 8.5vw;
+  font-weight: 500;
+  /* line-height: 95px; */
+  line-height: 8vw;
+}
+#bottom-left {
+  height: 40%;
+  width: 100%;
+  /* background-color: yellow; */
+}
+#color {
+  /* background-color: blue; */
+  /* height: 50%;  */
+  width: fit-content;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #000;
+  gap: 2px;
+}
+#color h5 {
+  font-size: 18px;
+  /* font-size: 2vw; */
+  font-weight: 500;
+  margin-right: 10px;
+}
+#color1 {
+  height: 16px;
+  width: 16px;
+  background-color: burlywood;
+  border-radius: 50%;
+  margin: 2px;
+}
+#color2 {
+  height: 16px;
+  width: 16px;
+  background-color: brown;
+  border-radius: 50%;
+}
+#left h2 {
+  margin-top: 40px;
+  /* font-size: 30px; */
+  font-size: 2vw;
+  /* font-weight: normal; */
+  margin-bottom: 7px;
+}
+#left p {
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  width: 65%;
+  /* font-weight: 600; */
+  color: #444;
+  /* line-height: 25px; */
+  line-height: 1.5vw;
+}
+
+#right {
+  height: 90%;
+  width: 38%;
+  position: relative;
+  /* background-color: rgb(22, 74, 109); */
+}
+#right-top {
+  height: 50px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+#right-top h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#right-top h5 {
+  font-size: 16px;
+}
+#right-top h5 i {
+  color: goldenrod;
+}
+#right img {
+  width: 100%;
+  height: 91.75%;
+  object-fit: cover;
+  object-position: 0% 20%;
+}
+#black-circle {
+  position: absolute;
+  height: 165px;
+  width: 165px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  border-radius: 50%;
+  top: 25%;
+  right: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#black-circle h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+#rotated {
+  position: absolute;
+  left: -13%;
+  bottom: 3%;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+@media (max-width: 600px) {
+  #main {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  #left {
+    height: fit-content;
+    width: 100%;
+    /* background-color: rgb(121, 0, 0); */
+  }
+
+  #left h1 {
+    font-size: 18vw;
+    line-height: 18vw;
+  }
+  #color {
+    width: fit-content;
+    padding: 5px 10px;
+  }
+  #color h5 {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  #color1 {
+    height: 12px;
+    width: 12px;
+  }
+  #color2 {
+    height: 12px;
+    width: 12px;
+  }
+  #left h2 {
+    margin-top: 20px;
+    font-size: 5.5vw;
+    margin-bottom: 8px;
+  }
+  #left p {
+    font-size: 4vw;
+    width: 85%;
+    line-height: 4.2vw;
+  }
+  #right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #right-top {
+    height: 30px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0px;
+  }
+  #right-top h4 {
+    font-size: 25px;
+    /* font-weight: 600; */
+  }
+  #right-top h5 {
+    font-size: 15px;
+  }
+
+  #right img {
+    border-radius: 5%;
+  }
+  #black-circle {
+    height: 70px;
+    width: 70px;
+    top: -7%;
+    right: 0%;
+  }
+
+  #black-circle h5 {
+    font-size: 12px;
+  }
+  #rotated {
+    left: 0%;
+    top: -13%;
+    rotate: 0deg;
+    transform-origin: 0 0;
+    /* translate: 20px 0px; */
+    font-size: 25px;
+  }
+}
